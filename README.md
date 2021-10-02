@@ -3,7 +3,7 @@
 A list of simple FastAPI projects.
 
 
-## Pojects
+## Projects
 
 |  #  | Name                               | Description                                     |
 | ----| -----------------------------------| ------------------------------------------------|
