@@ -1,6 +1,6 @@
 # Django Projects
 
-A list of simple Django projects.
+A list of simple Django and Django Rest Framework projects.
 
 
 ## Projects
