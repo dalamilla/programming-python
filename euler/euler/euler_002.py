@@ -6,21 +6,22 @@ By considering the terms in the Fibonacci sequence whose values do not exceed
 four million, find the sum of the even-valued terms.
 """
 
-def Euler002(n):
-  """ Solution of second Euler problem. """
-  sum = 0
-  
-  fib0 = 0
-  fib1 = 1
-  fib2 = fib0 + fib1
 
-  while fib2 <= n:
-    
-    if fib2 % 2 == 0:
-      sum += fib2
-        
-    fib0 = fib1
-    fib1 = fib2
+def Euler002(n):
+    """Solution of second Euler problem."""
+    sum = 0
+
+    fib0 = 0
+    fib1 = 1
     fib2 = fib0 + fib1
 
-  return sum
+    while fib2 <= n:
+
+        if fib2 % 2 == 0:
+            sum += fib2
+
+        fib0 = fib1
+        fib1 = fib2
+        fib2 = fib0 + fib1
+
+    return sum
