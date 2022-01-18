@@ -21,7 +21,7 @@ poetry shell
 - Running FastApi Application:
 
 ```
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```
 
 - Run FastApi Test Application:
