@@ -21,6 +21,11 @@ def test_date_with_space():
     assert response.status_code == 200
     assert response.json() == {"unix": 1317772800000, "utc": "Wed, 05 Oct 2011 00:00:00 GMT"}
 
+def test_date_with_space_and_timezone():
+    response = client.get("/api/05%20October%202011%2C%20GMT")
+    assert response.status_code == 200
+    assert response.json() == {"unix": 1317772800000, "utc": "Wed, 05 Oct 2011 00:00:00 GMT"}
+
 def test_no_a_date():
     response = client.get("/api/this-is-not-a-date")
     assert response.status_code == 400

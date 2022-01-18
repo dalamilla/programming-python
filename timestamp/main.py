@@ -14,7 +14,7 @@ app.add_middleware(
 
 def parsing_date(str_date: str):
 
-    for valid_fmt in ('%Y-%m-%d', '%d %B %Y'):
+    for valid_fmt in ('%Y-%m-%d', '%d %B %Y', '%d %B %Y, %Z'):
         try:
             pars_date = datetime.strptime(str_date, valid_fmt)
             return pars_date.replace(tzinfo=timezone.utc)
@@ -25,7 +25,7 @@ def parsing_date(str_date: str):
 
 @app.get("/api")
 @app.get("/api/{input_date}")
-def root(response: Response, input_date: Union[int, str] = Query(None)):
+async def root(response: Response, input_date: Union[int, str] = Query(None)):
 
     if input_date is None:
         time_date = datetime.now(timezone.utc)
