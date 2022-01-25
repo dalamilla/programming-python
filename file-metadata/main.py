@@ -6,16 +6,21 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins="*"
-)
+app.add_middleware(CORSMiddleware, allow_origins="*")
 
 templates = Jinja2Templates(directory="templates")
 
+
 @app.post("/api/fileanalyse")
-async def file_analyse(upfile: UploadFile = File(...), content_length: Optional[str] = Header(None)):
-    return {"name": upfile.filename, "type": upfile.content_type, "size": content_length}
+async def file_analyse(
+    upfile: UploadFile = File(...), content_length: Optional[str] = Header(None)
+):
+    return {
+        "name": upfile.filename,
+        "type": upfile.content_type,
+        "size": content_length,
+    }
+
 
 @app.get("/", response_class=HTMLResponse)
 async def main(request: Request):
