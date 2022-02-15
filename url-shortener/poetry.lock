@@ -11,7 +11,7 @@ tests = ["pytest", "pytest-asyncio", "mypy (>=0.800)"]
 
 [[package]]
 name = "django"
-version = "3.2.9"
+version = "3.2.12"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
@@ -28,14 +28,15 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "djangorestframework"
-version = "3.12.4"
+version = "3.13.1"
 description = "Web APIs for Django, made easy."
 category = "main"
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 
 [package.dependencies]
 django = ">=2.2"
+pytz = "*"
 
 [[package]]
 name = "pytz"
@@ -64,12 +65,12 @@ asgiref = [
     {file = "asgiref-3.4.1.tar.gz", hash = "sha256:4ef1ab46b484e3c706329cedeff284a5d40824200638503f5768edb6de7d58e9"},
 ]
 django = [
-    {file = "Django-3.2.9-py3-none-any.whl", hash = "sha256:e22c9266da3eec7827737cde57694d7db801fedac938d252bf27377cec06ed1b"},
-    {file = "Django-3.2.9.tar.gz", hash = "sha256:51284300f1522ffcdb07ccbdf676a307c6678659e1284f0618e5a774127a6a08"},
+    {file = "Django-3.2.12-py3-none-any.whl", hash = "sha256:9b06c289f9ba3a8abea16c9c9505f25107809fb933676f6c891ded270039d965"},
+    {file = "Django-3.2.12.tar.gz", hash = "sha256:9772e6935703e59e993960832d66a614cf0233a1c5123bc6224ecc6ad69e41e2"},
 ]
 djangorestframework = [
-    {file = "djangorestframework-3.12.4-py3-none-any.whl", hash = "sha256:6d1d59f623a5ad0509fe0d6bfe93cbdfe17b8116ebc8eda86d45f6e16e819aaf"},
-    {file = "djangorestframework-3.12.4.tar.gz", hash = "sha256:f747949a8ddac876e879190df194b925c177cdeb725a099db1460872f7c0a7f2"},
+    {file = "djangorestframework-3.13.1-py3-none-any.whl", hash = "sha256:24c4bf58ed7e85d1fe4ba250ab2da926d263cd57d64b03e8dcef0ac683f8b1aa"},
+    {file = "djangorestframework-3.13.1.tar.gz", hash = "sha256:0c33407ce23acc68eca2a6e46424b008c9c02eceb8cf18581921d0092bc1f2ee"},
 ]
 pytz = [
     {file = "pytz-2021.3-py2.py3-none-any.whl", hash = "sha256:3672058bc3453457b622aab7a1c3bfd5ab0bdae451512f6cf25f64ed37f5b87c"},
