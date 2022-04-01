@@ -1,6 +1,6 @@
 # Exercise Tracker
 
-Exercise Tracker from FreeCodeCamp Back End Development and APIs certification implemented on FastAPI.
+Exercise Tracker microservice implemented on FastAPI.
 
 ## Instructions
 

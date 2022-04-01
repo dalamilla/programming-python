@@ -1,6 +1,6 @@
 # File Metadata
 
-File Metadata from FreeCodeCamp Back End Development and APIs certification implemented on FastAPI.
+File Metadata microservice implemented on FastAPI.
 
 ## Instructions
 

@@ -1,6 +1,6 @@
 # Timestamp
 
-Timestamp from FreeCodeCamp Back End Development and APIs certification implemented on FastAPI.
+Timestamp microservice implemented on FastAPI.
 
 ## Instructions
 
