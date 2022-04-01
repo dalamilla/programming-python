@@ -1,6 +1,6 @@
 # File Metadata
 
-File Metadata from FreeCodeCamp Back End Development and APIs certification implemented on Django.
+File Metadata microservice implemented on Django.
 
 ## Instructions
 

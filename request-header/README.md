@@ -1,6 +1,6 @@
 # Request Header Parser
 
-Request Header Parser from FreeCodeCamp Back End Development and APIs certification implemented on Django.
+Request Header Parser microservice implemented on Django.
 
 ## Instructions
 

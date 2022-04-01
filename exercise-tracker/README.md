@@ -1,6 +1,6 @@
 # Exercise Tracker
 
-Exercise Tracker from FreeCodeCamp Back End Development and APIs certification implemented on Django.
+Exercise Tracker microservice implemented on Django.
 
 ## Instructions
 

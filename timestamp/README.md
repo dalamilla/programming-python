@@ -1,6 +1,6 @@
 # Timestamp
 
-Timestamp from FreeCodeCamp Back End Development and APIs certification implemented on Django.
+Timestamp microservice implemented on Django.
 
 ## Instructions
 

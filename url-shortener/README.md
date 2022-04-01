@@ -1,6 +1,6 @@
 # URL Shortener
 
-URL Shortener from FreeCodeCamp Back End Development and APIs certification implemented on Django.
+URL Shortener microservice implemented on Django.
 
 ## Instructions
 
