@@ -7,3 +7,4 @@ A list of Mixed programming projects.
 |  #  | Name                                  | Description                                                                                   |
 | ----| --------------------------------------| ----------------------------------------------------------------------------------------------|
 |  01 | [Generic](./generic/README.md)        | Generic programming projects with Python.                                                     |
+|  02 | [FastAPI](./fastapi/README.md)        | FastAPI framework, high performance, easy to learn, fast to code, ready for production.       |
