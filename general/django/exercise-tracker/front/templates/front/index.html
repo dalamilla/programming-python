@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+    }
+
+    form {
+      background-color: #E7E9EB;
+      width: 20%;
+      height: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 20px;
+    }
+
+    input {
+      color: #000;
+      background: #fff;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 3px;
+      outline: 0;
+      font-size: medium;
+      opacity: 1;
+    }
+
+    ::placeholder {
+      color: #04AA6D;
+      opacity: 1;
+    }
+
+    input[type="text"]:focus {
+      background: #fff;
+      border: 1px solid #04AA6D;
+    }
+
+    input[type="date"] {
+      color: #04AA6D;
+      background: #fff;
+    }
+
+    input[type="submit"] {
+      color: #fff;
+      background: #4CAF50;
+    }
+
+    input[type="submit"]:hover {
+      color: #fff;
+      background: #04AA6D;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/api/users" method="post">
+    <h2>Create User</h2>
+    <input id="uname" type="text" name="username" placeholder="username" />
+    <input type="submit" value="Submit" />
+  </form>
+  <form id="exercise-form" method="post">
+    <h2>Add Exercises</h2>
+    <input id="id" type="text" name=":_id" placeholder=":_id" />
+    <input id="description" type="text" name="description" placeholder="description*" />
+    <input id="duration" type="text" name="duration" placeholder="duration* (mins.)" />
+    <input id="date" type="date" name="date" />
+    <input type="submit" value="Submit" />
+  </form>
+  </div>
+  <script>
+    const exerciseForm = document.getElementById("exercise-form");
+
+    exerciseForm.addEventListener("submit", () => {
+      const userId = document.getElementById("id").value;
+      exerciseForm.action = `/api/users/${userId}/exercises`;
+
+      exerciseForm.submit();
+    });
+  </script>
+</body>
+
+</html>

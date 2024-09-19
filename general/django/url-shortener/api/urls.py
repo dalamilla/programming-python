@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import hello_world
+from .views import UrlShortenerView
 
 urlpatterns = [
-    path('', hello_world)
+    path("shorturl", UrlShortenerView.as_view(), name="shorturl"),
+    path("shorturl/<short_url>", UrlShortenerView.as_view(), name="shorturl"),
 ]
