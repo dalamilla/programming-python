@@ -1,4 +1,4 @@
-""" Solution of Euler project problems. """
+"""Solution of Euler project problems."""
 
 __version__ = "0.1.0"
 

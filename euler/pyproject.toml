@@ -1,16 +1,20 @@
-[tool.poetry]
+[project]
 name = "euler"
 version = "0.1.0"
 description = "A series of challenging mathematical/computer programming problems."
-authors = ["Your Name <you@example.com>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+requires-python = ">=3.10"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
+[tool.poetry]
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^21.12b0"
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+ruff = "^0.11.10"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
