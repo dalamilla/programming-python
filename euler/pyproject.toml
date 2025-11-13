@@ -2,19 +2,16 @@
 name = "euler"
 version = "0.1.0"
 description = "A series of challenging mathematical/computer programming problems."
-authors = [
-    {name = "Your Name",email = "you@example.com"}
-]
+authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10"
-dependencies = [
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5,<9",
+    "ruff>=0.11.10,<0.12",
 ]
-
-[tool.poetry]
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.5"
-ruff = "^0.11.10"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
