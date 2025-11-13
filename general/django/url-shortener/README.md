@@ -9,13 +9,13 @@ To start this app:
 - Installing Dependencies
 
 ```
-poetry install
+uv sync
 ```
 
 - Activating the virtual environment:
 
 ```
-poetry shell
+source .venv/bin/activate
 ```
 
 - Configure Django Application variables:
